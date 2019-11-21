@@ -1,4 +1,4 @@
-#!/usr/bin/env python2
+#!/usr/bin/env python3
 #
 # Hexagon War Game (working title) by Christer Enfors
 #
@@ -96,8 +96,8 @@ class Board:
         assert img_x_size % x_size == 0, "Incorrect x size"
         assert img_y_size % y_size == 0, "Incorrect y size"
 
-        num_cols = img_x_size / x_size
-        num_rows = img_y_size / y_size
+        num_cols = int(img_x_size / x_size)
+        num_rows = int(img_y_size / y_size)
 
         images = []
 
